@@ -125,36 +125,36 @@ const container: React.CSSProperties = {
 
 const timelineEvents: TimelineEvent[] = [
     {
-        time: "",
-        event: "Ceremony",
-        icon: Heart,
-        hueA: 40, // Gold
-        hueB: 40, // Gold
-    },
-    {
-        time: "",
-        event: "Photo",
-        icon: Camera,
-        hueA: 40, // Gold
-        hueB: 40, // Gold
-    },
-    {
-        time: "",
-        event: "Grazing", 
+        time: "2:00 PM",
+        event: "Guest Arrival & Registration",
         icon: Clock,
         hueA: 40, // Gold
         hueB: 40, // Gold
     },
     {
-        time: "",
-        event: "Dinner",
+        time: "3:00 PM",
+        event: "The Entourage & Wedding Ceremony",
+        icon: Heart,
+        hueA: 40, // Gold
+        hueB: 40, // Gold
+    },
+    {
+        time: "4:30 PM",
+        event: "Cocktails, Souvenir & Photobooth",
+        icon: Camera,
+        hueA: 40, // Gold
+        hueB: 40, // Gold
+    },
+    {
+        time: "6:00 PM",
+        event: "Dinner & Heartfelt Toast",
         icon: Utensils,
         hueA: 40, // Gold
         hueB: 40, // Gold
     },
     {
-        time: "",
-        event: "Party",
+        time: "8:00 PM",
+        event: "A Night to Remember",
         icon: Music,
         hueA: 40, // Gold
         hueB: 40, // Gold

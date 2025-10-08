@@ -77,7 +77,7 @@ const HashtagGiftsSection = () => {
               className="text-base sm:text-lg md:text-xl lg:text-2xl font-display font-semibold text-primary break-words"
               data-testid="text-hashtag"
             >
-              #HapPAULyEverAfterWithDIANA
+              #DonjieMarge2025
             </p>
           </motion.div>
         </motion.div>
@@ -124,21 +124,10 @@ const HashtagGiftsSection = () => {
             transition={{ duration: 0.6, delay: 1.1 }}
           >
             <p 
-              className="text-lg text-foreground leading-relaxed"
+              className="text-lg text-foreground leading-relaxed uppercase"
               data-testid="text-gifts-message"
             >
-              With all that we have,
-              <br />
-              <br />
-              We've been truly blessed. Your
-              <br />
-              presence and prayers are all that we
-              <br />
-              request. But if you desire to give
-              <br />
-              nonetheless, Monetary gift is much
-              <br />
-              appreciated.
+              With all we have, we have been truly blessed. Your presence and prayers are very much appreciated but if you desire to give nonetheless, monetary gift is one we humbly suggest
             </p>
           </motion.div>
         </motion.div>

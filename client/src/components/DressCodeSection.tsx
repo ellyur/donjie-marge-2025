@@ -7,11 +7,8 @@ import flower3 from '@assets/flower3_1759741371015.png';
 
 const DressCodeSection = () => {
   const dressCodeColors = [
-    { name: 'Very Light Cream', color: '#F7E7CF', hex: '#F7E7CF' },
-    { name: 'Pale Beige', color: '#E4CCA0', hex: '#E4CCA0' },
-    { name: 'Light Brown', color: '#BE9F7B', hex: '#BE9F7B' },
-    { name: 'Golden Mustard', color: '#D69D2A', hex: '#D69D2A' },
-    { name: 'Medium Brown', color: '#8C6442', hex: '#8C6442' }
+    { name: 'Beige', color: '#F5F5DC', hex: '#F5F5DC' },
+    { name: 'Light Brown', color: '#D2B48C', hex: '#D2B48C' }
   ];
 
   return (
@@ -73,15 +70,16 @@ const DressCodeSection = () => {
                     </h3>
                     <div className="space-y-3 text-left px-4">
                       <div>
-                        <p className="text-sm font-semibold text-foreground mb-2">For Men:</p>
-                        <p className="text-sm text-foreground">Black Suit and Slacks</p>
-                        <p className="text-sm text-foreground">White Long Sleeves</p>
-                        <p className="text-sm text-foreground">Gray Tie</p>
+                        <p className="text-sm font-semibold text-foreground mb-2">Ninong (Godfather):</p>
+                        <p className="text-sm text-foreground">Black Suit and Black Tie</p>
                       </div>
                       <div className="pt-2">
-                        <p className="text-sm font-semibold text-foreground mb-2">For Women:</p>
-                        <p className="text-sm text-foreground">Light Gray/Silver</p>
-                        <p className="text-sm text-foreground">Formal Long Gown</p>
+                        <p className="text-sm font-semibold text-foreground mb-2">Ninang (Godmother):</p>
+                        <p className="text-sm text-foreground">Sage Green</p>
+                      </div>
+                      <div className="pt-2">
+                        <p className="text-sm font-semibold text-foreground mb-2">Bridesmaids:</p>
+                        <p className="text-sm text-foreground">Dusty Pink / Burgundy</p>
                       </div>
                     </div>
                   </div>
@@ -122,9 +120,9 @@ const DressCodeSection = () => {
                       FOR GUESTS
                     </h3>
                     <p className="text-sm text-foreground px-4 mb-3">
-                      We would love to see you in a<br />
-                      <span className="font-semibold">Formal - Semi Formal attire</span><br />
-                      in the shades specified below.
+                      We would love to see you in<br />
+                      <span className="font-semibold">Formal and Semiformal Dresses</span><br />
+                      in the color palette specified below.
                     </p>
                   </div>
                 </motion.div>
@@ -155,7 +153,7 @@ const DressCodeSection = () => {
             <p className="text-foreground text-center mb-8">
               Recommended Color Palette for Guests
             </p>
-            <div className="grid grid-cols-5 gap-4 sm:gap-6 max-w-3xl mx-auto">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto">
               {dressCodeColors.map((colorItem, index) => (
                 <div key={index} className="text-center group">
                   <div 
@@ -188,23 +186,23 @@ const DressCodeSection = () => {
           <div className="grid md:grid-cols-2 gap-6 relative z-10">
             {[
               { 
-                title: "Principal Sponsors - Men", 
-                description: "Black Suit and Slacks, White Long Sleeves, Gray Tie",
+                title: "Ninong (Godfather)", 
+                description: "Black Suit and Black Tie",
                 delay: 9.4
               },
               { 
-                title: "Principal Sponsors - Women", 
-                description: "Light Gray/Silver Formal Long Gown",
+                title: "Ninang (Godmother)", 
+                description: "Sage Green",
                 delay: 9.5
               },
               { 
-                title: "Guests Dress Code", 
-                description: "Formal to Semi-Formal attire in the recommended color palette",
+                title: "Bridesmaids", 
+                description: "Dusty Pink / Burgundy",
                 delay: 9.6
               },
               { 
-                title: "Respectful attire", 
-                description: "Kindly ensure your attire is respectful and appropriate for a wedding ceremony.",
+                title: "Guests", 
+                description: "Formal and Semiformal Dresses in Beige and Light Brown",
                 delay: 9.7
               }
             ].map((guideline, index) => (

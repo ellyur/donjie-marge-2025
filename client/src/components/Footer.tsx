@@ -20,12 +20,12 @@ const Footer = () => {
           {/* Couple Names */}
           <div>
             <h2 className="text-3xl sm:text-4xl mb-2 text-foreground" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
-              Paul
+              Donjie
               <span className="text-primary mx-3">&</span>
-              Diana
+              Marge
             </h2>
             <p className="text-foreground text-lg">
-              December 26, 2025 • The White House Resort, Moncada, Tarlac
+              November 27, 2025 • Christ the King Parish - Greenmeadows
             </p>
           </div>
 
@@ -49,7 +49,7 @@ const Footer = () => {
               With love and gratitude,
             </p>
             <p className="text-foreground" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
-              Paul & Diana
+              Donjie & Marge
             </p>
           </div>
         </motion.div>
