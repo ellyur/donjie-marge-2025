@@ -39,35 +39,35 @@ We look forward to growing old together, through every joy and every ache. In si
       id: 1,
       title: "Where It Began",
       text: "College sweethearts from Mapua. A brief courtship that bloomed into a two-month relationship—short, but unforgettable.",
-      image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851677/loveStory1_wlmnn1.jpg",
+      image: "https://res.cloudinary.com/dazghdddu/image/upload/v1759981195/story1_lbzjhy.jpg",
       icon: Sparkles
     },
     {
       id: 2, 
       title: "Beautiful Yet Brief",
       text: "Two months filled with meaning, laughter, and connection. Yet its ending carved a quiet ache into the heart of the woman left behind, as love slipped away into the arms of another.",
-      image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851677/loveStory3_breabq.jpg",
+      image: "https://res.cloudinary.com/dazghdddu/image/upload/v1759981196/story2_jkqfqc.jpg",
       icon: Heart
     },
     {
       id: 3,
       title: "Separate Paths", 
       text: "The boy turned to someone else and circumstances pulled them apart. The spark faded, and they went their separate ways—becoming friends, building their own lives, raising families, and chasing different horizons.",
-      image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851678/loveStory4_qij73x.jpg",
+      image: "https://res.cloudinary.com/dazghdddu/image/upload/v1759981196/story3_hwccbi.jpg",
       icon: Users
     },
     {
       id: 4,
       title: "Fate's Reunion",
       text: "Then, in 2017, twenty-one years later, fate stepped in once more. In Qatar, a moment unfolded that brought them back together, not to talk business, but to reminisce and share the stories of the years that had quietly passed them by.",
-      image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851678/loveStory12_rtxmx4.jpg",
+      image: "https://res.cloudinary.com/dazghdddu/image/upload/v1759981196/story4_fozswr.jpg",
       icon: MapPin
     },
     {
       id: 5,
       title: "Forever Together",
       text: "Having both endured the trials of challenging past marriages, they now approach love with deeper understanding, resilience, and a renewed sense of hope. God has a perfect plan, trials came, but made them grow to be the best version of themselves.",
-      image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851678/loveStory15_ighl0h.jpg",
+      image: "https://res.cloudinary.com/dazghdddu/image/upload/v1759981196/story5_wlebhv.jpg",
       icon: Infinity,
       showFullStoryButton: true
     }
