@@ -7,8 +7,8 @@ import { LinkPreview } from '@/components/ui/link-preview';
 
 import venuee from "@assets/venuee.png";
 
-const ceremonyImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982327/ceremony_szmu8e.jpg";
-const receptionImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982326/reception_uon0ea.jpg";
+const ceremonyImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982326/reception_uon0ea.jpg";
+const receptionImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982327/ceremony_szmu8e.jpg";
 
 const VenueSection = () => {
   const { animationsEnabled } = useAnimationContext();
@@ -114,7 +114,7 @@ const VenueSection = () => {
                       {/* Image frame decoration */}
                       <div className="absolute -inset-1 bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg" />
                       <img
-                        src="https://res.cloudinary.com/dazghdddu/image/upload/v1759982327/ceremony_szmu8e.jpg"
+                        src={venue.image}
                         alt={venue.name}
                         className="relative w-full h-72 md:h-96 object-cover rounded-lg shadow-xl"
                         loading="lazy"

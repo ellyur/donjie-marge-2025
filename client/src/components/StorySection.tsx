@@ -245,8 +245,8 @@ We look forward to growing old together, through every joy and every ache. In si
               >
                 {/* Content */}
                 <div className={`space-y-6 sm:space-y-8 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full mb-4 sm:mb-6 bg-primary/20 border-2 border-primary">
-                    <card.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary" strokeWidth={2} />
+                  <div className="inline-flex items-center justify-center mb-4 sm:mb-6">
+                    <card.icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" style={{ color: '#3a3a3a' }} strokeWidth={1.5} />
                   </div>
                   
                   <h3 className="text-3xl sm:text-4xl lg:text-5xl font-script italic mb-4 sm:mb-6 text-foreground" data-testid={`text-story-card-${card.id}-title`}>

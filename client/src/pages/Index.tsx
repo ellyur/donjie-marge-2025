@@ -4,13 +4,8 @@ import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import ImageLoop from '@/components/ImageLoop';
 import MusicConsentPopup from '@/components/MusicConsentPopup';
-// Cover images from attached assets
-import cover1Image from '@assets/cover1_1759741344819.png';
-import cover2Image from '@assets/cover2_1759741344819.png';
-import cover3Image from '@assets/cover3_1759741344820.png';
 import CountdownSection from '@/components/CountdownSection';
 import StorySection from '@/components/StorySection';
-import VideoSection from '@/components/VideoSection';
 import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
 import VenueSection from '@/components/VenueSection';
 import DressCodeSection from '@/components/DressCodeSection';
@@ -24,6 +19,11 @@ import CoverSection from '@/components/CoverSection';
 import InvitationRevealSection from '@/components/InvitationRevealSection';
 import MusicControl from '@/components/MusicControl';
 import { AnimationContext } from '@/contexts/AnimationContext';
+
+// Cover images from Cloudinary
+const cover1Image = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981192/cover1_p9oznv.jpg";
+const cover2Image = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981193/cover2_idjrne.jpg";
+const cover3Image = "https://res.cloudinary.com/dazghdddu/image/upload/v1759983524/cover3_uxghhy.jpg";
 
 const Index = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -113,7 +113,6 @@ const Index = () => {
             imageUrl={cover1Image}
             alt="Andrei & Sam Wedding Cover Image 1"
           />
-          <VideoSection />
           <ScrollTriggeredTimeline />
           <VenueSection />
           <CoverSection

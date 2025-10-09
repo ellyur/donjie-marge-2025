@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
-const principalSponsorsImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982952/ninongs-ninangs_dzj7ai.png";
-const guestsImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759983453/guests_omggth.png";
+const principalSponsorsImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759983453/guests_omggth.png";
+const guestsImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982952/guests_hqo0pg.png";
 import flower9 from '@assets/flower9_1759741371017.png';
 import flower3 from '@assets/flower3_1759741371015.png';
 
@@ -175,34 +175,6 @@ const DressCodeSection = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* Color Palette */}
-        <motion.div 
-          className="mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 8.7 }}
-        >
-          <div className="bg-card/30 border border-border rounded-xl p-8 shadow-soft hover-elegant transition-all duration-500">
-            <h3 className="text-xl font-body font-medium text-foreground mb-6 text-center">
-              Recommended Color Palette
-            </h3>
-            <p className="text-foreground text-center mb-8">
-              Recommended Color Palette for Guests
-            </p>
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto">
-              {guestsColors.map((colorItem, index) => (
-                <div key={index} className="text-center group">
-                  <div 
-                    className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full border-2 border-border shadow-soft group-hover:scale-105 transition-transform duration-300"
-                    style={{ backgroundColor: colorItem.color }}
-                  ></div>
-                  <p className="text-xs text-foreground mt-2">{colorItem.name}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
 
         {/* Modern Additional Guidelines */}
         <motion.div 
