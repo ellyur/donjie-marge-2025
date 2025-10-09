@@ -142,7 +142,7 @@ const EntourageSection = () => {
                 Ninong (Godfather)
               </h4>
               {entourageData.principalSponsors.men.map((name, index) => (
-                <p key={index} className="text-[10px] md:text-sm lg:text-base font-body text-foreground" data-testid={`principal-sponsor-men-${index}`}>
+                <p key={index} className="text-[8px] md:text-sm lg:text-base font-body text-foreground" data-testid={`principal-sponsor-men-${index}`}>
                   {name}
                 </p>
               ))}
@@ -152,7 +152,7 @@ const EntourageSection = () => {
                 Ninang (Godmother)
               </h4>
               {entourageData.principalSponsors.women.map((name, index) => (
-                <p key={index} className="text-[10px] md:text-sm lg:text-base font-body text-foreground" data-testid={`principal-sponsor-women-${index}`}>
+                <p key={index} className="text-[8px] md:text-sm lg:text-base font-body text-foreground" data-testid={`principal-sponsor-women-${index}`}>
                   {name}
                 </p>
               ))}
