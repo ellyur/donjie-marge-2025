@@ -47,7 +47,7 @@ const Index = () => {
   useEffect(() => {
     if (audioRef.current) {
       const audio = audioRef.current;
-      audio.volume = 0.75;
+      audio.volume = 0.5;
       audio.loop = true;
 
       // Handle audio loading
