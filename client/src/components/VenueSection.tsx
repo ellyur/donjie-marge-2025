@@ -7,8 +7,8 @@ import { LinkPreview } from '@/components/ui/link-preview';
 
 import venuee from "@assets/venuee.png";
 
-const ceremonyImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982326/reception_uon0ea.jpg";
-const receptionImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982327/ceremony_szmu8e.jpg";
+const ceremonyImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982327/ceremony_szmu8e.jpg";
+const receptionImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759987054/reception_mt4fay.webp";
 
 const VenueSection = () => {
   const { animationsEnabled } = useAnimationContext();

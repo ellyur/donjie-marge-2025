@@ -28,8 +28,8 @@ const HeroSection = () => {
       {/* Date on the top right - Vertical */}
       <div className="absolute top-8 right-6 sm:top-12 sm:right-12 lg:top-16 lg:right-20 z-20">
         <div className={`text-right transition-all duration-700 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
-          <p className="text-3xl sm:text-4xl lg:text-5xl text-white font-light tracking-wider" data-testid="text-date" style={{ fontFamily: 'Boska, serif', fontWeight: 300, writingMode: 'vertical-rl', textOrientation: 'upright', letterSpacing: '0.3em' }}>
-            11.27.25
+          <p className="text-3xl sm:text-4xl lg:text-5xl text-white font-light leading-tight text-center" data-testid="text-date" style={{ fontFamily: 'Boska, serif', fontWeight: 300, lineHeight: '1.2' }}>
+            11<br />.<br />27<br />.<br />25
           </p>
         </div>
       </div>

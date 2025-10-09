@@ -77,7 +77,7 @@ const HashtagGiftsSection = () => {
               className="text-base sm:text-lg md:text-xl lg:text-2xl font-display font-semibold text-primary break-words"
               data-testid="text-hashtag"
             >
-              #DonjieMarge2025
+              #DonjieWishYourWifeyWasHotLikeMarge
             </p>
           </motion.div>
         </motion.div>

@@ -361,10 +361,10 @@ We look forward to growing old together, through every joy and every ache. In si
                 
                 <div className="max-w-2xl mx-auto">
                   <p className="text-xl sm:text-2xl leading-relaxed italic mb-4 text-foreground">
-                    "Above all, clothe yourselves with love, which binds us all together in perfect harmony."
+                    "When the time is right, I the Lord will make it happen"
                   </p>
                   <p className="text-base sm:text-lg font-body text-foreground/80">
-                    Colossians 3:14
+                    Isaiah 60:22
                   </p>
                 </div>
                 
