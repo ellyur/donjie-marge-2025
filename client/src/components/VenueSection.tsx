@@ -7,7 +7,7 @@ import { LinkPreview } from '@/components/ui/link-preview';
 
 import venuee from "@assets/venuee.png";
 
-const ceremonyImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982327/ceremony_szmu8e.jpg";
+const ceremonyImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759997599/ceremony_rghd6k.jpg";
 const receptionImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759987054/reception_mt4fay.webp";
 
 const VenueSection = () => {
@@ -21,7 +21,7 @@ const VenueSection = () => {
       mapUrl: 'https://maps.app.goo.gl/R1Ut2P1XEPam3uMg8',
       mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.8976!2d121.0644!3d14.6099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM2JzM1LjYiTiAxMjHCsDAzJzUxLjgiRQ!5e0!3m2!1sen!2sph!4v1234567890',
       description: 'Join us at Christ the King Parish - Greenmeadows as we exchange our vows and begin our journey together.',
-      details: 'The ceremony begins at 3:00 PM. Please arrive early to be seated. Dress code: Formal to Semi-Formal attire.',
+      details: 'The ceremony begins at 3:00 PM. Please arrive early to be seated. Dress code: Formal attire.',
       startTime: '3:00 PM',
       locationGuide: 'View on Maps →'
     },

@@ -143,7 +143,7 @@ const DressCodeSection = () => {
                     </h3>
                     <p className="text-sm text-foreground px-4 mb-3">
                       We would love to see you in<br />
-                      <span className="font-semibold">Formal and Semiformal Dresses</span><br />
+                      <span className="font-semibold">Formal Dresses</span><br />
                       in the color palette specified below.
                     </p>
                   </div>
@@ -211,7 +211,7 @@ const DressCodeSection = () => {
               },
               { 
                 title: "Guests", 
-                description: "Formal and Semiformal Dresses in Beige and Light Brown",
+                description: "Formal Dresses in Beige and Light Brown",
                 delay: 9.7
               }
             ].map((guideline, index) => (
