@@ -4,20 +4,20 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/compone
 import { X } from 'lucide-react';
 
 // Prenup photos
-const prenup = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851678/saveThedate_ihz2n3.jpg";
-const prenup1 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851678/saveThedate2_o314bm.jpg";
-const prenup2 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851678/saveThedate3_y8zdj9.jpg";
-const prenup3 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851679/saveThedate4_oqdbzx.jpg";
-const prenup4 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851679/saveThedate5_jdycun.jpg";
-const prenup5 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851679/saveThedate6_cyx8xe.jpg";
-const prenup6 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851679/saveThedate8_yhocbp.jpg";
-const prenup7 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851680/saveThedate9_bcwpio.jpg";
-const prenup8 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851680/saveThedate10_iiaasz.jpg";
+const prenup = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981194/prenup1_fu44pp.jpg";
+const prenup1 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981192/prenup2_ece5bq.jpg";
+const prenup2 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981194/prenup4_qm2otn.jpg";
+const prenup3 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981193/prenup3_sg1zsn.jpg";
+const prenup4 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981194/prenup5_ynk82g.jpg";
+const prenup5 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981194/prenup6_sx94fu.jpg";
+const prenup6 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981194/prenup7_ka25kp.jpg";
+const prenup7 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981195/prenup8_izqoaq.jpg";
+const prenup8 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981195/prenup9_quwrlm.jpg";
 
 // Cover images
-const cover1Image = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851680/saveThedate11_lzl3yr.jpg";
-const cover2Image = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851681/saveThedate12_yivltn.jpg";
-const cover3Image = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851680/saveThedate10_iiaasz.jpg";
+const cover1Image = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981195/prenup10_c5fyxn.jpg";
+const cover2Image = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981195/prenup11_hrbxrl.jpg";
+const cover3Image = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981195/prenup12_zjf5mq.jpg";
 
 const MemorableMomentsSection = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
