@@ -87,8 +87,8 @@ const Index = () => {
         data-testid="background-audio"
       >
         <source
-          src="https://res.cloudinary.com/dazghdddu/video/upload/v1759982956/ytmp3free.cc_ang-huling-el-bimbo-eraserheads-violin-cover-by-justerini-youtubemp3free.org_z1p9wj.mp3"
-          type="audio/mpeg"
+          src="https://res.cloudinary.com/dazghdddu/video/upload/v1759995907/Untitled_video_-_Made_with_Clipchamp_np2v2p.mp4"
+          type="video/mp4"
         />
         Your browser does not support the audio element.
       </audio>
