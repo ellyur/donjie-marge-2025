@@ -1,13 +1,10 @@
 import { useAnimationContext } from '@/contexts/AnimationContext';
 
-// Image loop images - New urban nighttime prenup photos
-const imageLoop1 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851676/imageLoop_ep3c2l.jpg";
-const imageLoop2 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851676/imageLoop1_uuvkmn.jpg";
-const imageLoop3 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851676/imageLoop2_xrkge1.jpg";
-const imageLoop4 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851677/imageLoop4_ty9oei.jpg";
-const imageLoop5 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851677/imageLoop5_frdadk.jpg";
-const imageLoop6 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851681/imageLoop6_r4gnxb.jpg";
-const imageLoop7 = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851677/imageLoop7_hxtvrr.jpg";
+// Image loop images
+const imageLoop1 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981193/Couple_gfwfd4.jpg";
+const imageLoop2 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981192/cover1_p9oznv.jpg";
+const imageLoop3 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981194/cover3_lpswqm.jpg";
+const imageLoop4 = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981194/prenup4_qm2otn.jpg";
 
 const ImageLoop = () => {
   const { animationsEnabled } = useAnimationContext();
@@ -16,11 +13,11 @@ const ImageLoop = () => {
     imageLoop2,
     imageLoop3,
     imageLoop4,
-    imageLoop5,
-    imageLoop6,
-    imageLoop7,
     imageLoop1,
-    imageLoop2
+    imageLoop2,
+    imageLoop3,
+    imageLoop4,
+    imageLoop1
   ];
 
   return (
