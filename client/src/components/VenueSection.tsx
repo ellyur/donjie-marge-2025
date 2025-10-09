@@ -7,7 +7,8 @@ import { LinkPreview } from '@/components/ui/link-preview';
 
 import venuee from "@assets/venuee.png";
 
-const venueImage = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759852614/venue_qklcxs.jpg";
+const ceremonyImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982327/ceremony_szmu8e.jpg";
+const receptionImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982326/reception_uon0ea.jpg";
 
 const VenueSection = () => {
   const { animationsEnabled } = useAnimationContext();
@@ -16,7 +17,7 @@ const VenueSection = () => {
       title: 'Ceremony',
       name: 'Christ the King Parish - Greenmeadows',
       address: 'Diocese of Cubao',
-      image: venueImage,
+      image: ceremonyImage,
       mapUrl: 'https://maps.app.goo.gl/R1Ut2P1XEPam3uMg8',
       mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.8976!2d121.0644!3d14.6099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM2JzM1LjYiTiAxMjHCsDAzJzUxLjgiRQ!5e0!3m2!1sen!2sph!4v1234567890',
       description: 'Join us at Christ the King Parish - Greenmeadows as we exchange our vows and begin our journey together.',
@@ -28,7 +29,7 @@ const VenueSection = () => {
       title: 'Reception',
       name: 'The Clubhouse at Third Greenmeadows',
       address: 'Greenmeadows',
-      image: venueImage,
+      image: receptionImage,
       mapUrl: 'https://maps.app.goo.gl/Hm8ApVTL7YS3KxTN8',
       mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.8976!2d121.0644!3d14.6099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM2JzM1LjYiTiAxMjHCsDAzJzUxLjgiRQ!5e0!3m2!1sen!2sph!4v1234567890',
       description: 'Celebrate with us at The Clubhouse at Third Greenmeadows for an evening of dinner, dancing, and joyful memories.',
