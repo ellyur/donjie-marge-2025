@@ -136,17 +136,23 @@ const EntourageSection = () => {
           <h3 className="text-xl md:text-2xl lg:text-3xl font-display font-bold mb-4 md:mb-6 text-primary" data-testid="principal-sponsors-title">
             {entourageData.principalSponsors.title}
           </h3>
-          <div className="grid grid-cols-2 gap-2 md:gap-4 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             <div className="text-center">
+              <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-2 md:mb-3 text-primary">
+                Ninong (Godfather)
+              </h4>
               {entourageData.principalSponsors.men.map((name, index) => (
-                <p key={index} className="text-xs md:text-base lg:text-lg font-body text-foreground mb-1 whitespace-nowrap pl-[0px] pr-[0px] text-left ml-[0px] mr-[0px]" data-testid={`principal-sponsor-men-${index}`}>
+                <p key={index} className="text-xs md:text-base lg:text-lg font-body text-foreground" data-testid={`principal-sponsor-men-${index}`}>
                   {name}
                 </p>
               ))}
             </div>
             <div className="text-center">
+              <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-2 md:mb-3 text-primary">
+                Ninang (Godmother)
+              </h4>
               {entourageData.principalSponsors.women.map((name, index) => (
-                <p key={index} className="text-xs md:text-base lg:text-lg font-body text-foreground mb-1 whitespace-nowrap text-left" data-testid={`principal-sponsor-women-${index}`}>
+                <p key={index} className="text-xs md:text-base lg:text-lg font-body text-foreground" data-testid={`principal-sponsor-women-${index}`}>
                   {name}
                 </p>
               ))}
