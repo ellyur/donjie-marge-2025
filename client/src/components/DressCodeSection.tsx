@@ -1,14 +1,21 @@
 import { motion } from 'framer-motion';
 
-const principalSponsorsImage = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759853280/princi_d0ydtv.png";
-const guestsImage = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759853280/guestss_h99tbm.png";
+const principalSponsorsImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759982952/ninongs-ninangs_dzj7ai.png";
+const guestsImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759983453/guests_omggth.png";
 import flower9 from '@assets/flower9_1759741371017.png';
 import flower3 from '@assets/flower3_1759741371015.png';
 
 const DressCodeSection = () => {
-  const dressCodeColors = [
+  const principalSponsorsColors = [
+    { name: 'Sage Green', color: '#9CAF88', hex: '#9CAF88' },
+    { name: 'Dusty Pink', color: '#DCAE96', hex: '#DCAE96' },
+    { name: 'Burgundy', color: '#800020', hex: '#800020' }
+  ];
+
+  const guestsColors = [
     { name: 'Beige', color: '#F5F5DC', hex: '#F5F5DC' },
-    { name: 'Light Brown', color: '#D2B48C', hex: '#D2B48C' }
+    { name: 'Light Brown', color: '#D2B48C', hex: '#D2B48C' },
+    { name: 'Brown', color: '#964B00', hex: '#964B00' }
   ];
 
   return (
@@ -92,6 +99,21 @@ const DressCodeSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 8.5 }}
                 />
+                
+                <div className="mt-6">
+                  <p className="text-sm text-foreground mb-4 text-center">Color Palette</p>
+                  <div className="grid grid-cols-3 gap-3 max-w-sm mx-auto">
+                    {principalSponsorsColors.map((colorItem, index) => (
+                      <div key={index} className="text-center">
+                        <div 
+                          className="w-12 h-12 mx-auto rounded-full border-2 border-border shadow-sm hover:scale-105 transition-transform duration-300"
+                          style={{ backgroundColor: colorItem.color }}
+                        ></div>
+                        <p className="text-xs text-foreground mt-2">{colorItem.name}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -134,6 +156,21 @@ const DressCodeSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 8.8 }}
                 />
+                
+                <div className="mt-6">
+                  <p className="text-sm text-foreground mb-4 text-center">Color Palette</p>
+                  <div className="grid grid-cols-3 gap-3 max-w-sm mx-auto">
+                    {guestsColors.map((colorItem, index) => (
+                      <div key={index} className="text-center">
+                        <div 
+                          className="w-12 h-12 mx-auto rounded-full border-2 border-border shadow-sm hover:scale-105 transition-transform duration-300"
+                          style={{ backgroundColor: colorItem.color }}
+                        ></div>
+                        <p className="text-xs text-foreground mt-2">{colorItem.name}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -153,14 +190,14 @@ const DressCodeSection = () => {
             <p className="text-foreground text-center mb-8">
               Recommended Color Palette for Guests
             </p>
-            <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto">
-              {dressCodeColors.map((colorItem, index) => (
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto">
+              {guestsColors.map((colorItem, index) => (
                 <div key={index} className="text-center group">
                   <div 
                     className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full border-2 border-border shadow-soft group-hover:scale-105 transition-transform duration-300"
                     style={{ backgroundColor: colorItem.color }}
                   ></div>
-                  <p className="text-xs text-foreground mt-2">{colorItem.hex}</p>
+                  <p className="text-xs text-foreground mt-2">{colorItem.name}</p>
                 </div>
               ))}
             </div>
