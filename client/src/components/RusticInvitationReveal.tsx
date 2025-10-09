@@ -1,7 +1,4 @@
 import { Heart } from 'lucide-react';
-import prenup1 from '@assets/groom_1759741344818.png';
-import prenup2 from '@assets/hero-section_1759741344822.png';
-import prenup3 from '@assets/bride_1759741344818.png';
 import flower1Image from '@assets/flower1_1759854441524.png';
 import flowerImage from '@assets/flower_1759854441531.png';
 
@@ -11,9 +8,9 @@ interface RusticInvitationRevealProps {
 
 const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealProps) => {
   const polaroids = [
-    { src: prenup1, alt: 'Groom' },
-    { src: prenup2, alt: 'Couple' },
-    { src: prenup3, alt: 'Bride' }
+    { src: 'https://res.cloudinary.com/dazghdddu/image/upload/v1759981194/Groom_fu3bsk.jpg', alt: 'Groom' },
+    { src: 'https://res.cloudinary.com/dazghdddu/image/upload/v1759981193/Couple_gfwfd4.jpg', alt: 'Couple' },
+    { src: 'https://res.cloudinary.com/dazghdddu/image/upload/v1759981193/Bride_ns6dbz.jpg', alt: 'Bride' }
   ];
 
   return (
