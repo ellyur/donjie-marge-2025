@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { X } from 'lucide-react';
 
 const EntourageSection = () => {
   const entourageData = {
@@ -113,14 +112,13 @@ const EntourageSection = () => {
           <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             {entourageData.parents.map((parent, index) => (
               <div key={index} className="text-center" data-testid={`parents-section-${index}`}>
-                <h3 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-2 md:mb-3 text-primary flex items-center justify-center gap-2">
+                <h3 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-2 md:mb-3 text-primary">
                   {parent.label}
-                  {parent.label === "Parents of the Bride" && <X className="w-3 h-3 md:w-4 md:h-4" />}
                 </h3>
                 {parent.names.map((name, nameIndex) => (
-                  <p key={nameIndex} className="text-xs md:text-base lg:text-lg font-body text-foreground flex items-center justify-center gap-2" data-testid={`parent-name-${index}-${nameIndex}`}>
+                  <p key={nameIndex} className="text-xs md:text-base lg:text-lg font-body text-foreground flex items-center justify-center gap-1" data-testid={`parent-name-${index}-${nameIndex}`}>
                     {name}
-                    {name === "Mr. Ignacio R. Bernardo" && <X className="w-3 h-3 md:w-4 md:h-4" />}
+                    {name === "Mr. Ignacio R. Bernardo" && <span className="text-xs md:text-sm">†</span>}
                   </p>
                 ))}
               </div>
