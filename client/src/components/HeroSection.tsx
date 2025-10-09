@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { useState } from 'react';
 import { useAnimationContext } from '@/contexts/AnimationContext';
 
-const heroImage = "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851675/hero-section_azhook.jpg";
+const heroImage = "https://res.cloudinary.com/dazghdddu/image/upload/v1759981195/prenup11_hrbxrl.jpg";
 
 const HeroSection = () => {
   const [showElements, setShowElements] = useState(false);
@@ -29,7 +29,7 @@ const HeroSection = () => {
       <div className="absolute top-8 right-6 sm:top-12 sm:right-12 lg:top-16 lg:right-20 z-20">
         <div className={`text-right transition-all duration-700 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
           <p className="text-3xl sm:text-4xl lg:text-5xl text-white font-light tracking-wider leading-relaxed" data-testid="text-date" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
-            12<br />26<br />25
+            11<br />27<br />25
           </p>
         </div>
       </div>
@@ -44,7 +44,7 @@ const HeroSection = () => {
             {animationsEnabled ? (
               <TypeAnimation
                 sequence={[
-                  'Paul\n&\nDiana',
+                  'Donjie\n&\nMarge',
                   () => {
                     setShowElements(true);
                   }
@@ -67,11 +67,11 @@ const HeroSection = () => {
                 }}
                 className="typewriter-text"
               >
-                Paul
+                Donjie
                 <br />
                 &
                 <br />
-                Diana
+                Marge
               </span>
             )}
           </h1>
