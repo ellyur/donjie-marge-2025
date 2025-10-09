@@ -172,12 +172,12 @@ const EntourageSection = () => {
           </h3>
           <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
             {entourageData.secondarySponsors.roles.map((item, index) => (
-              <div key={index} className="text-center" data-testid={`secondary-sponsor-${item.role.toLowerCase()}`}>
+              <div key={index} className="text-center" data-testid={`secondary-sponsor-${item.role.toLowerCase().replace(/\s+/g, '-')}`}>
                 <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-1 md:mb-2 text-primary">
                   {item.role}
                 </h4>
                 {item.names.map((name, nameIndex) => (
-                  <p key={nameIndex} className="text-[10px] md:text-sm lg:text-base font-body text-foreground" data-testid={`${item.role.toLowerCase()}-name-${nameIndex}`}>
+                  <p key={nameIndex} className="text-[8px] md:text-xs lg:text-sm font-body text-foreground" data-testid={`${item.role.toLowerCase().replace(/\s+/g, '-')}-name-${nameIndex}`}>
                     {name}
                   </p>
                 ))}
@@ -275,7 +275,7 @@ const EntourageSection = () => {
                   {item.role}
                 </h4>
                 {item.names.map((name, nameIndex) => (
-                  <p key={nameIndex} className="text-[10px] md:text-sm font-body text-foreground" data-testid={`${item.role.toLowerCase().replace(/\s+/g, '-')}-name-${nameIndex}`}>
+                  <p key={nameIndex} className="text-[8px] md:text-xs lg:text-sm font-body text-foreground" data-testid={`${item.role.toLowerCase().replace(/\s+/g, '-')}-name-${nameIndex}`}>
                     {name}
                   </p>
                 ))}
