@@ -3,8 +3,17 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { motion } from 'framer-motion';
 import { useAnimationContext } from '@/contexts/AnimationContext';
-import { Sparkles, Star, Ship, Heart, Infinity } from 'lucide-react';
+import { Sparkles, Heart, Users, MapPin, Infinity } from 'lucide-react';
 import flowerImage from '@assets/flower_1759854441531.png';
+import { Button } from '@/components/ui/button';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -15,41 +24,52 @@ const StorySection = () => {
   const horizontalRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState<{ [key: number]: { x: number; y: number } }>({});
 
+  const fullStory = `College sweethearts from Mapua. A brief courtship that bloomed into a two-month relationship—short, but unforgettable.
+
+Two months filled with meaning, laughter, and connection. Yet its ending carved a quiet ache into the heart of the woman left behind, as love slipped away into the arms of another. The boy turned to someone else and circumstances pulled them apart. The spark faded, and they went their separate ways—becoming friends, building their own lives, raising families, and chasing different horizons.
+
+Then, in 2017, twenty-one years later, fate stepped in once more. A situation In Qatar, a moment unfolded that brought them back together, not to talk business, but to reminisce and share the stories of the years that had quietly passed them by.
+
+Having both endured the trials of challenging past marriages, they now approach love with deeper understanding, resilience, and a renewed sense of hope. God has a perfect plan, trials came, but made them grow to be the best version of themselves.
+
+We look forward to growing old together, through every joy and every ache. In sickness and in health, till death and beyond—where love remembers what time forgets.`;
+
   const storyCards = [
     {
       id: 1,
-      title: "How We Met",
-      text: "We met while serving in church ministry, unaware of how meaningful that moment would become. What started as friendship grew into a special bond through faith.",
+      title: "Where It Began",
+      text: "College sweethearts from Mapua. A brief courtship that bloomed into a two-month relationship—short, but unforgettable.",
       image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851677/loveStory1_wlmnn1.jpg",
       icon: Sparkles
     },
     {
       id: 2, 
-      title: "Dreams Together",
-      text: "We found love in the simple moments—shared dreams and quiet support. Even as one journeyed abroad and the other set sail across the ocean, our hearts kept moving in the same direction, always dreaming together.",
+      title: "Beautiful Yet Brief",
+      text: "Two months filled with meaning, laughter, and connection. Yet its ending carved a quiet ache into the heart of the woman left behind, as love slipped away into the arms of another.",
       image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851677/loveStory3_breabq.jpg",
-      icon: Star
-    },
-    {
-      id: 3,
-      title: "Oceans Apart", 
-      text: "Though miles and oceans lay between us, love bridged the distance. With every challenge, our hearts grew closer, always moving as one.",
-      image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851678/loveStory4_qij73x.jpg",
-      icon: Ship
-    },
-    {
-      id: 4,
-      title: "The Decision",
-      text: "We chose to wait for the right time, setting aside our dream wedding to focus on what mattered most—supporting one another. With a simple civil union as our beginning, we now look forward to celebrating our love in its fullness.",
-      image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851678/loveStory12_rtxmx4.jpg",
       icon: Heart
     },
     {
+      id: 3,
+      title: "Separate Paths", 
+      text: "The boy turned to someone else and circumstances pulled them apart. The spark faded, and they went their separate ways—becoming friends, building their own lives, raising families, and chasing different horizons.",
+      image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851678/loveStory4_qij73x.jpg",
+      icon: Users
+    },
+    {
+      id: 4,
+      title: "Fate's Reunion",
+      text: "Then, in 2017, twenty-one years later, fate stepped in once more. In Qatar, a moment unfolded that brought them back together, not to talk business, but to reminisce and share the stories of the years that had quietly passed them by.",
+      image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851678/loveStory12_rtxmx4.jpg",
+      icon: MapPin
+    },
+    {
       id: 5,
-      title: "Our Future",
-      text: "Today we celebrate a promise made possible by God's grace. With Him at the center, we step into the future together.",
+      title: "Forever Together",
+      text: "Having both endured the trials of challenging past marriages, they now approach love with deeper understanding, resilience, and a renewed sense of hope. God has a perfect plan, trials came, but made them grow to be the best version of themselves.",
       image: "https://res.cloudinary.com/dnlreax2z/image/upload/v1759851678/loveStory15_ighl0h.jpg",
-      icon: Infinity
+      icon: Infinity,
+      showFullStoryButton: true
     }
   ];
 
@@ -236,6 +256,34 @@ const StorySection = () => {
                   <p className="text-lg sm:text-xl leading-relaxed text-foreground/90" data-testid={`text-story-card-${card.id}-text`}>
                     {card.text}
                   </p>
+
+                  {/* Full Story Button - Only on last card */}
+                  {card.showFullStoryButton && (
+                    <div className="mt-6">
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button 
+                            variant="outline" 
+                            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                            data-testid="button-read-full-story"
+                          >
+                            Read Full Love Story
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                          <DialogHeader>
+                            <DialogTitle className="text-3xl font-script italic text-primary">Our Complete Love Story</DialogTitle>
+                            <DialogDescription className="sr-only">
+                              The complete story of our journey together
+                            </DialogDescription>
+                          </DialogHeader>
+                          <div className="mt-4 space-y-4 text-foreground/90 leading-relaxed whitespace-pre-line">
+                            {fullStory}
+                          </div>
+                        </DialogContent>
+                      </Dialog>
+                    </div>
+                  )}
 
                   {/* SVG Decorative Element */}
                   <div className="flex items-center space-x-4 pt-4 sm:pt-6">
