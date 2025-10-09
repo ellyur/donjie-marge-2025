@@ -170,14 +170,14 @@ const EntourageSection = () => {
           <h3 className="text-xl md:text-2xl lg:text-3xl font-display font-bold mb-4 md:mb-6 text-primary" data-testid="secondary-sponsors-title">
             {entourageData.secondarySponsors.title}
           </h3>
-          <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-3 gap-2 md:gap-6 max-w-5xl mx-auto">
             {entourageData.secondarySponsors.roles.map((item, index) => (
               <div key={index} className="text-center" data-testid={`secondary-sponsor-${item.role.toLowerCase().replace(/\s+/g, '-')}`}>
                 <h4 className="text-sm md:text-lg lg:text-xl font-display font-semibold mb-1 md:mb-2 text-primary">
                   {item.role}
                 </h4>
                 {item.names.map((name, nameIndex) => (
-                  <p key={nameIndex} className="text-[8px] md:text-xs lg:text-sm font-body text-foreground" data-testid={`${item.role.toLowerCase().replace(/\s+/g, '-')}-name-${nameIndex}`}>
+                  <p key={nameIndex} className="text-[10px] md:text-xs lg:text-sm font-body text-foreground" data-testid={`${item.role.toLowerCase().replace(/\s+/g, '-')}-name-${nameIndex}`}>
                     {name}
                   </p>
                 ))}
@@ -268,14 +268,14 @@ const EntourageSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 10.0 }}
         >
-          <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-3 gap-2 md:gap-6 max-w-5xl mx-auto">
             {entourageData.bearers.map((item, index) => (
               <div key={index} className="text-center" data-testid={`bearer-${item.role.toLowerCase().replace(/\s+/g, '-')}`}>
                 <h4 className="text-sm md:text-lg font-display font-semibold mb-2 text-primary">
                   {item.role}
                 </h4>
                 {item.names.map((name, nameIndex) => (
-                  <p key={nameIndex} className="text-[8px] md:text-xs lg:text-sm font-body text-foreground" data-testid={`${item.role.toLowerCase().replace(/\s+/g, '-')}-name-${nameIndex}`}>
+                  <p key={nameIndex} className="text-[10px] md:text-xs lg:text-sm font-body text-foreground" data-testid={`${item.role.toLowerCase().replace(/\s+/g, '-')}-name-${nameIndex}`}>
                     {name}
                   </p>
                 ))}
